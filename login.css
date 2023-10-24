@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --main-bg-color: #272829;
+    --main-text-color: white;
+    --secondary-text-color: #D8D9DA;
+    --secondary-bg-color: #61677A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #363062;
+    padding: 1rem 2rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-text-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--main-text-color);
+}
+
+.nav-special {
+    background: rgb(131,56,236);
+    background: linear-gradient(90deg, rgba(131,56,236,1) 0%, rgba(255,0,110,1) 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.sign {
+    background-color: goldenrod;
+}
+
+header a:hover {
+    transform: translateY(-2px);
+}
+
+.btn-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Login Section */
+
+main {
+    padding: 2rem 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--main-bg-color);
+    height: 100vh;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #363062;
+    color: var(--main-text-color);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+
+.login-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+    height: 33rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.login-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    line-clamp: 3;
+    width: 100%;
+    height: 15rem;
+    border-radius: .5rem;
+    color: white;
+    background: rgb(131,56,236);
+background: linear-gradient(90deg, rgba(131,56,236,1) 0%, rgba(255,0,110,1) 100%);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+}
+
+.form-container input {
+    text-align: center;
+    height: 1.5rem;
+    border: none;
+    border-bottom: 1px solid var(--main-bg-color);
+}
+
+.alert-user {
+    display: none;
+    color: red;
+}
+
+.alert-password {
+    display: none;
+    color: red;
+}
+
+.form-container a {
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    height: 2rem;
+    background-color: green;
+
+}
+
+button:hover {
+    box-shadow: 0 0 5px green;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: .5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    /* .hero {
+        background-image: url(img/Diseño\ sin\ título\ \(1\).png);
+    } */
+    
+    header {
+        flex-direction: column;
+    }
+
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    .hidden {
+        display: none;
+    }
+
+    .nav-header {
+        width: 100%;
+    }
+
+    .btn-toggle {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    .show-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        height: 15rem;
+        width: 100%;
+        animation: menu 1s;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
