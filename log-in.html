@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="log-in.css">
     <script src="https://kit.fontawesome.com/40cd4f1558.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -16,11 +16,11 @@
             </button>
         </div>
         <nav class="hidden">
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#plans">Our Plans</a>
-            <a href="contact.html" class="nav-special">Log In</a>
-            <a href="contact.html" class="nav-special sign">Sign In</a>
+            <a href="index.html">Home</a>
+            <!-- <a href="#features">Features</a>
+            <a href="#plans">Our Plans</a> -->
+            <a href="log-in.html" class="nav-special">Log In</a>
+            <a href="sign-up.html" class="nav-special sign">Sign Up</a>
         </nav>
     </header>
     <main>
@@ -31,12 +31,20 @@
                 </div>
                 <form action="" class="form-container">
                     <label for="user"></label>
-                    <input type="text" placeholder="Username" class="input-user">
+                    <input type="text" placeholder="Username or Email" class="input-user">
                     <span class="alert-user">*Must contain at least 8 characters.</span>
                     <label for="password"></label>
                     <input type="password" placeholder="Password" class="input-password">
                     <span class="alert-password">*Only numbers are allowed.</span>
                     <button>Log In</button>
+                    <div class="links-log-in">
+                        <h4>Or Log In using:</h4>
+                        <div class="links-container">
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>    
+                        </div>
+                    </div>
                     <a href="#">Forgot your password?</a>
                 </form>
             </div>

@@ -90,7 +90,7 @@ main {
 h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #363062;
+    text-align: center;
     color: var(--main-text-color);
 }
 
@@ -171,6 +171,24 @@ button:hover {
     box-shadow: 0 0 5px green;
 }
 
+.links-log-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
 /* Footer */
 
 footer {
@@ -235,12 +253,6 @@ footer a {
 
 }
 
-@media (max-width: 480px) {
-    
-    h3 {
-        font-size: 1rem;
-    }
-}
 
 @keyframes menu {
     from {
