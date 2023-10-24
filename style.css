@@ -333,6 +333,7 @@ footer a {
 @media (max-width: 480px) {
     .hero {
         background-image: url(img/hero-mobile.png);
+        height: 40rem;
     }
 }
 
